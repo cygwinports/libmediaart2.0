@@ -1,0 +1,10 @@
+--- origsrc/libmediaart-1.9.0/docs/reference/libmediaart/Makefile.am	2014-10-17 05:22:05.000000000 -0500
++++ src/libmediaart-1.9.0/docs/reference/libmediaart/Makefile.am	2015-11-16 13:12:08.441979500 -0600
+@@ -2,6 +2,7 @@ AUTOMAKE_OPTIONS = 1.6
+ 
+ # The name of the module.
+ DOC_MODULE=libmediaart
++DOC_MODULE_VERSION=@LIBMEDIAART_API_VERSION@
+ 
+ # The top-level SGML file.
+ DOC_MAIN_SGML_FILE=libmediaart-docs.sgml

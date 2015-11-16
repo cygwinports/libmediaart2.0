@@ -1,0 +1,27 @@
+ORIG_PN="libmediaart"
+inherit gnome2
+
+NAME="libmediaart2.0"
+VERSION=1.9.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Media art cache library"
+DESCRIPTION="GObject library tasked with managing, extracting and handling
+media art caches."
+
+PATCH_URI="
+	0.3.0-no-undefined.patch
+	1.9.0-gtk-doc-version.patch
+"
+
+PKG_NAMES="${NAME}_0 ${NAME}-devel ${NAME}-doc girepository-MediaArt2.0 vala-${NAME}"
+libmediaart2_0_0_CONTENTS="usr/bin/cygmediaart-2.0-0.dll usr/share/doc/"
+libmediaart2_0_devel_REQUIRES="girepository-MediaArt2.0 vala-libmediaart2.0"
+libmediaart2_0_devel_CONTENTS="usr/include/libmediaart-2.0/
+	usr/lib/libmediaart-2.0.dll.a usr/lib/pkgconfig/libmediaart-2.0.pc"
+libmediaart2_0_doc_CATEGORY="Doc"
+libmediaart2_0_doc_CONTENTS="usr/share/gtk-doc/html/libmediaart-2.0/"
+girepository_MediaArt2_0_CONTENTS="usr/*/gir*-1.0/MediaArt-2.0.*"
+vala_libmediaart2_0_CONTENTS="usr/share/vala/vapi/libmediaart-2.0.*"
+
+CYGCONF_ARGS="--enable-gdkpixbuf"
