@@ -1,0 +1,10 @@
+--- origsrc/libmediaart-1.9.4/libmediaart/Makefile.am	2017-08-10 05:03:28.000000000 -0500
++++ src/libmediaart-1.9.4/libmediaart/Makefile.am	2018-02-11 23:30:31.216916400 -0600
+@@ -52,6 +52,7 @@ endif
+ endif
+ 
+ libmediaart_@LIBMEDIAART_API_VERSION@_la_LDFLAGS = \
++	-no-undefined \
+ 	-version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
+ 
+ libmediaart_@LIBMEDIAART_API_VERSION@_la_LIBADD = \

@@ -2,7 +2,7 @@ ORIG_PN="libmediaart"
 inherit gnome2
 
 NAME="libmediaart2.0"
-VERSION=1.9.1
+VERSION=1.9.4
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Media art cache library"
@@ -10,7 +10,7 @@ DESCRIPTION="GObject library tasked with managing, extracting and handling
 media art caches."
 
 PATCH_URI="
-	0.3.0-no-undefined.patch
+	1.9.4-no-undefined.patch
 	1.9.0-gtk-doc-version.patch
 "
 
